@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+
+.cart {
+  &__td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid $lightgrey;
+  }
+
+  &__img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  &__tr-quantity{
+    margin: 0 7px 0 7px;
+  }
+
+  &__controls{
+    display: inline-block;
+    color: $accent;
+    &:hover{
+      cursor: pointer;
+      color: darken($accent,8%);
+      text-shadow: 0 0 15px rgba($accent, 0.5);
+      transition: all 200ms;
+    }
+    &--clicked{
+      color: $accent !important;
+      text-shadow: 0 0 30px rgba($accent, 1) !important;
+      transition: all 200ms;
+    }
+  }
+}
